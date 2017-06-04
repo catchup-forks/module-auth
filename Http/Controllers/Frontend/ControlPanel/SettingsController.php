@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
+namespace App\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
 
-use Cms\Modules\Auth\Http\Requests\FrontendSettingsRequest;
+use App\Modules\Auth\Http\Requests\FrontendSettingsRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 

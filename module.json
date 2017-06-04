@@ -12,11 +12,11 @@
     "active": 1,
     "order": 1,
     "providers": [
-        "Cms\\Modules\\Auth\\Providers\\CustomLockServiceProvider",
-        "Cms\\Modules\\Auth\\Providers\\AuthModuleServiceProvider",
-        "Cms\\Modules\\Auth\\Providers\\AuthEventsProvider",
-        "Cms\\Modules\\Auth\\Providers\\AuthRoutingProvider",
-        "Cms\\Modules\\Auth\\Providers\\AuthServicesProvider"
+        "App\\Modules\\Auth\\Providers\\CustomLockServiceProvider",
+        "App\\Modules\\Auth\\Providers\\AuthModuleServiceProvider",
+        "App\\Modules\\Auth\\Providers\\AuthEventsProvider",
+        "App\\Modules\\Auth\\Providers\\AuthRoutingProvider",
+        "App\\Modules\\Auth\\Providers\\AuthServicesProvider"
     ],
     "aliases": {
         "Lock": "BeatSwitch\\Lock\\Integrations\\Laravel\\Facades\\Lock",

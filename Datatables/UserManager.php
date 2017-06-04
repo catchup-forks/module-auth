@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Modules\Auth\Datatables;
+namespace App\Modules\Auth\Datatables;
 
 use Lock;
 

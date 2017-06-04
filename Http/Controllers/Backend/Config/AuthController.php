@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Backend\Config;
+namespace App\Modules\Auth\Http\Controllers\Backend\Config;
 
-use Cms\Modules\Admin\Http\Controllers\Backend\Config\BaseConfigController;
+use App\Modules\Admin\Http\Controllers\Backend\Config\BaseConfigController;
 
 class AuthController extends BaseConfigController
 {

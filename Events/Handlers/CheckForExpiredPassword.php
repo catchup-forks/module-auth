@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Events\Handlers;
+namespace App\Modules\Auth\Events\Handlers;
 
-use Cms\Modules\Auth\Events\UserHasLoggedIn;
+use App\Modules\Auth\Events\UserHasLoggedIn;
 use Carbon\Carbon;
 
 class CheckForExpiredPassword

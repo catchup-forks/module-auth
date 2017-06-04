@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Modules\Auth\Datatables;
+namespace App\Modules\Auth\Datatables;
 
 use Illuminate\Support\Collection;
 
@@ -36,7 +36,7 @@ class ApiKeyManager
                 'sort_order' => 'desc',
                 'source' => 'admin.apikey.manager',
                 'collection' => function () {
-                    $model = 'Cms\Modules\Auth\Models\ApiKey';
+                    $model = 'App\Modules\Auth\Models\ApiKey';
 
                     return $model::all();
                 },

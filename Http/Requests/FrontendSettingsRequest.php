@@ -1,9 +1,9 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Requests;
+namespace App\Modules\Auth\Http\Requests;
 
 use Auth;
-use Cms\Http\Requests\Request;
+use App\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class FrontendSettingsRequest extends Request

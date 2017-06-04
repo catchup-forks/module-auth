@@ -1,10 +1,10 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Backend\User;
+namespace App\Modules\Auth\Http\Controllers\Backend\User;
 
-use Cms\Modules\Auth\Datatables\PermissionManager;
-use Cms\Modules\Admin\Traits\DataTableTrait;
-use Cms\Modules\Auth\Models\User;
+use App\Modules\Auth\Datatables\PermissionManager;
+use App\Modules\Admin\Traits\DataTableTrait;
+use App\Modules\Auth\Models\User;
 
 class PermissionController extends BaseUserController
 {

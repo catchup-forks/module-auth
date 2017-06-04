@@ -1,10 +1,10 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Backend\User;
+namespace App\Modules\Auth\Http\Controllers\Backend\User;
 
-use Cms\Modules\Auth\Repositories\Role\RepositoryInterface as RoleRepo;
-use Cms\Modules\Auth\Models\User;
-use Cms\Modules\Auth as Auth;
+use App\Modules\Auth\Repositories\Role\RepositoryInterface as RoleRepo;
+use App\Modules\Auth\Models\User;
+use App\Modules\Auth as Auth;
 use Illuminate\Http\Request;
 
 class RoleController extends BaseUserController

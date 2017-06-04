@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
+namespace App\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
 
-use Cms\Modules\Auth\Models\Permission;
+use App\Modules\Auth\Models\Permission;
 
 class PermissionsController extends BaseController
 {

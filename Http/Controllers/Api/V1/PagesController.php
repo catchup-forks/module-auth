@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Api\V1;
+namespace App\Modules\Auth\Http\Controllers\Api\V1;
 
-use Cms\Modules\Core\Http\Controllers\BaseApiController;
+use App\Modules\Core\Http\Controllers\BaseApiController;
 use Auth;
 
 class PagesController extends BaseApiController

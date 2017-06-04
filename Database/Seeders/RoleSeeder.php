@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Modules\Auth\Database\Seeders;
+namespace App\Modules\Auth\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
@@ -36,7 +36,7 @@ class RoleSeeder extends Seeder
             ],
         ];
 
-        $seedModel = 'Cms\Modules\Auth\Models\Role';
+        $seedModel = 'App\Modules\Auth\Models\Role';
         $roles = with(new $seedModel())->insert($models);
     }
 }

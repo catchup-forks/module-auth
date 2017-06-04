@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Modules\Auth\Models;
+namespace App\Modules\Auth\Models;
 
 class Permission extends BaseModel
 {

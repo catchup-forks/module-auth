@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
+namespace App\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
 
-use Cms\Modules\Core\Http\Controllers\BaseFrontendController;
+use App\Modules\Core\Http\Controllers\BaseFrontendController;
 use Former;
 
 class BaseController extends BaseFrontendController

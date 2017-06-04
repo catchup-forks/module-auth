@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Events\Handlers;
+namespace App\Modules\Auth\Events\Handlers;
 
-use Cms\Modules\Auth\Events\UserPasswordWasChanged;
+use App\Modules\Auth\Events\UserPasswordWasChanged;
 use Illuminate\Support\Facades\Session;
 use Carbon\Carbon;
 

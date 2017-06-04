@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
+namespace App\Modules\Auth\Http\Controllers\Frontend\ControlPanel;
 
 class DashboardController extends BaseController
 {

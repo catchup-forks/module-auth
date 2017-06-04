@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Modules\Auth\Database\Seeders;
+namespace App\Modules\Auth\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
@@ -11,7 +11,7 @@ class PermissionSeeder extends Seeder
     {
         $permissionGroups = get_array_column(config('cms'), 'permissions');
 
-        $seedModel = 'Cms\Modules\Auth\Models\Permission';
+        $seedModel = 'App\Modules\Auth\Models\Permission';
         foreach ($permissionGroups as $group) {
             foreach ($group as $type => $permissions) {
                 foreach ($permissions as $action => $name) {
@@ -31,8 +31,8 @@ class PermissionSeeder extends Seeder
                         die();
                     }
 
-                    with(new \Cms\Modules\Auth\Models\Role())->find(1)->permissions()->save($permission);
-                    with(new \Cms\Modules\Auth\Models\Role())->find(2)->permissions()->save($permission);
+                    with(new \App\Modules\Auth\Models\Role())->find(1)->permissions()->save($permission);
+                    with(new \App\Modules\Auth\Models\Role())->find(2)->permissions()->save($permission);
                 }
             }
         }

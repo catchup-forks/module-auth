@@ -1,9 +1,9 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Backend\User;
+namespace App\Modules\Auth\Http\Controllers\Backend\User;
 
-use Cms\Modules\Core\Http\Controllers\BaseBackendController;
-use Cms\Modules\Auth\Models\User;
+use App\Modules\Core\Http\Controllers\BaseBackendController;
+use App\Modules\Auth\Models\User;
 use Former;
 
 class BaseUserController extends BaseBackendController

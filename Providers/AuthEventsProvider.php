@@ -1,9 +1,9 @@
 <?php
 
-namespace Cms\Modules\Auth\Providers;
+namespace App\Modules\Auth\Providers;
 
-use Cms\Modules\Core\Providers\BaseEventsProvider;
-use Cms\Modules\Auth;
+use App\Modules\Core\Providers\BaseEventsProvider;
+use App\Modules\Auth;
 
 class AuthEventsProvider extends BaseEventsProvider
 {
@@ -17,36 +17,36 @@ class AuthEventsProvider extends BaseEventsProvider
          * AuthController@postLogin
          * AuthController@postRegister
          */
-        'Cms\Modules\Auth\Events\UserHasLoggedIn' => [
-            'Cms\Modules\Auth\Events\Handlers\CheckFor2Fa',
-            'Cms\Modules\Auth\Events\Handlers\CheckForExpiredPassword',
-            'Cms\Modules\Auth\Events\Handlers\CheckForEmptyEmail',
-            'Cms\Modules\Auth\Events\Handlers\UpdateLastLogin',
+        'App\Modules\Auth\Events\UserHasLoggedIn' => [
+            'App\Modules\Auth\Events\Handlers\CheckFor2Fa',
+            'App\Modules\Auth\Events\Handlers\CheckForExpiredPassword',
+            'App\Modules\Auth\Events\Handlers\CheckForEmptyEmail',
+            'App\Modules\Auth\Events\Handlers\UpdateLastLogin',
         ],
 
         /*
          * AuthController@postRegister
          */
-        'Cms\Modules\Auth\Events\UserIsRegistering' => [
+        'App\Modules\Auth\Events\UserIsRegistering' => [
         ],
 
         /*
          * AuthController@postRegister
          */
-        'Cms\Modules\Auth\Events\UserHasRegistered' => [
+        'App\Modules\Auth\Events\UserHasRegistered' => [
         ],
 
         /*
          * SecurityController@postRegister
          */
-        'Cms\Modules\Auth\Events\UserPasswordWasChanged' => [
-            'Cms\Modules\Auth\Events\Handlers\RemovePasswordChangeLock',
+        'App\Modules\Auth\Events\UserPasswordWasChanged' => [
+            'App\Modules\Auth\Events\Handlers\RemovePasswordChangeLock',
         ],
 
-        'Cms\Modules\Admin\Events\GotDatatableConfig' => [
-            'Cms\Modules\Auth\Events\Handlers\ManipulateUserPermissionsDatatable',
-            'Cms\Modules\Auth\Events\Handlers\ManipulateUserApiKeyDatatable',
-            'Cms\Modules\Auth\Events\Handlers\ManipulateRoleUsersDatatable',
+        'App\Modules\Admin\Events\GotDatatableConfig' => [
+            'App\Modules\Auth\Events\Handlers\ManipulateUserPermissionsDatatable',
+            'App\Modules\Auth\Events\Handlers\ManipulateUserApiKeyDatatable',
+            'App\Modules\Auth\Events\Handlers\ManipulateRoleUsersDatatable',
         ],
     ];
 
@@ -72,7 +72,7 @@ class AuthEventsProvider extends BaseEventsProvider
         ];
 
         foreach ($models as $model) {
-            $path = 'Cms\\Modules\\Auth\\Models\\'.$model;
+            $path = 'App\\Modules\\Auth\\Models\\'.$model;
             $path::saved(function () use ($model) {
                 \Cache::forget('sidebar.auth.'.strtolower($model).'.count');
             });

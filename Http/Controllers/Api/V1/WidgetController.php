@@ -1,9 +1,9 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Api\V1;
+namespace App\Modules\Auth\Http\Controllers\Api\V1;
 
-use Cms\Modules\Auth\Repositories\User\RepositoryInterface as UserRepo;
-use Cms\Modules\Core\Http\Controllers\BaseApiController;
+use App\Modules\Auth\Repositories\User\RepositoryInterface as UserRepo;
+use App\Modules\Core\Http\Controllers\BaseApiController;
 use Illuminate\Http\Request;
 
 class WidgetController extends BaseApiController

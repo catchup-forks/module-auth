@@ -1,10 +1,10 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Backend\Role;
+namespace App\Modules\Auth\Http\Controllers\Backend\Role;
 
-use Cms\Modules\Auth\Models\Permission;
+use App\Modules\Auth\Models\Permission;
 use Illuminate\Support\Facades\DB;
-use Cms\Modules\Auth\Models\Role;
+use App\Modules\Auth\Models\Role;
 use BeatSwitch\Lock\Manager;
 use Illuminate\Http\Request;
 

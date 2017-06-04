@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Events\Handlers;
+namespace App\Modules\Auth\Events\Handlers;
 
-use Cms\Modules\Admin\Events\GotDatatableConfig;
+use App\Modules\Admin\Events\GotDatatableConfig;
 use Illuminate\Support\Facades\Request;
 use BeatSwitch\Lock\Manager;
 
@@ -49,7 +49,7 @@ class ManipulateUserPermissionsDatatable
         // rebuild the collection
         $manager = $this->manager;
         array_set($event->config, 'options.collection', function () use ($manager, $user) {
-            $model = 'Cms\Modules\Auth\Models\Permission';
+            $model = 'App\Modules\Auth\Models\Permission';
 
             return $model::with('roles')->get()
                 ->filter(function ($model) use ($manager, $user) {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Modules\Auth\Datatables;
+namespace App\Modules\Auth\Datatables;
 
 class PermissionManager
 {
@@ -33,7 +33,7 @@ class PermissionManager
                 'sort_order' => 'desc',
                 'source' => 'admin.permission.manager',
                 'collection' => function () {
-                    $model = 'Cms\Modules\Auth\Models\Permission';
+                    $model = 'App\Modules\Auth\Models\Permission';
 
                     return $model::with('roles')->get();
                 },

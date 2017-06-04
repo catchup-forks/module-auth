@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Backend\Api;
+namespace App\Modules\Auth\Http\Controllers\Backend\Api;
 
-use Cms\Modules\Auth as Auth;
+use App\Modules\Auth as Auth;
 
 class CreateController extends BaseApiController
 {

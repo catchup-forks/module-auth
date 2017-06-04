@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Modules\Auth\Models;
+namespace App\Modules\Auth\Models;
 
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;

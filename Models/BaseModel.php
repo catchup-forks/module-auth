@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Models;
+namespace App\Modules\Auth\Models;
 
-use Cms\Modules\Core\Models\BaseModel as CBM;
+use App\Modules\Core\Models\BaseModel as CBM;
 
 class BaseModel extends CBM
 {

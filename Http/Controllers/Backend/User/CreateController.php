@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Controllers\Backend\User;
+namespace App\Modules\Auth\Http\Controllers\Backend\User;
 
-use Cms\Modules\Auth\Http\Requests\BackendCreateUserRequest;
+use App\Modules\Auth\Http\Requests\BackendCreateUserRequest;
 
 class CreateController extends BaseUserController
 {

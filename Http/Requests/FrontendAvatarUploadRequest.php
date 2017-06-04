@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Modules\Auth\Http\Requests;
+namespace App\Modules\Auth\Http\Requests;
 
-use Cms\Http\Requests\Request;
+use App\Http\Requests\Request;
 use Auth;
 
 class FrontendAvatarUploadRequest extends Request
