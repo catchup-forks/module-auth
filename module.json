@@ -1,14 +1,14 @@
 {
     "name": "Auth",
     "alias": "auth",
-    "description": "Auth Module for Phoenix CMS v1",
+    "description": "Auth Module for CleanSoft v5.4",
     "authors": [
         { "name": "xLink (Dan Aldridge)", "email": "xLink@cybershade.org" }
     ],
     "keywords": [
         "core-module"
     ],
-    "version": "v1.0.0",
+    "version": "v5.4.0",
     "active": 1,
     "order": 1,
     "providers": [

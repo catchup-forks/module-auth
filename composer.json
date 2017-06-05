@@ -1,7 +1,7 @@
 {
-    "name": "cysha/module-auth",
+    "name": "cleansoftnl/module-auth",
     "type": "pxcms-module",
-    "description": "Authentication Module for Phoenix CMS",
+    "description": "Authentication Module for CleanSoft",
     "license": "MIT",
     "authors": [
         { "name": "xLink", "email": "xLink@cybershade.org" }
